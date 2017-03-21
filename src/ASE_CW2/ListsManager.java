@@ -23,7 +23,9 @@ public class ListsManager  {
 	
 	private String	 regNumber;
 	private String 	 destination;
+	private String   groupName;
 	private int 	 numPassengers;
+	private int		 maxPassNo;
 	
 
 	public ListsManager()
@@ -108,8 +110,8 @@ public class ListsManager  {
 			String [] inline = line.split(",");
 			numPassengers = Integer.valueOf(inline[0]);
 			destination=inline[1];
-			
-			PassengerGroup pg = new PassengerGroup(numPassengers, destination);
+			groupName=inline[2];			
+			PassengerGroup pg = new PassengerGroup(numPassengers, destination, groupName);
 			PassengerGroupList.add(pg);
 		} 
 		catch (InputMismatchException ime) {
@@ -131,7 +133,7 @@ public class ListsManager  {
 		try {
 			String [] inline = line.split(",");
 			regNumber = inline[0];
-			int maxPassNo=3;
+			maxPassNo=Integer.valueOf(inline[1]);
 			
 
 			Taxi j = new Taxi(regNumber,maxPassNo);

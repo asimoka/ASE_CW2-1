@@ -9,17 +9,17 @@ import javax.swing.border.EmptyBorder;
 public class GUI extends JFrame implements Observer {
 	
 	//instance variables
-	private Kiosk kiosk1, kiosk2;
-	private String worker1, worker2;
+	private Worker worker1, worker2;
+	private String output1, output2;
 	private JTextArea area1, area2;
 	
-	public GUI(Kiosk inKiosk1, Kiosk inKiosk2) {
-		this.kiosk1 = inKiosk1;
-		this.kiosk2 = inKiosk2;
+	public GUI(Worker worker1, Worker worker2) {
+		this.worker1 = worker1;
+		this.worker2 = worker2;
 		
-		kiosk1.registerObserver(this);
-		kiosk2.registerObserver(this);
-		
+		worker1.registerObserver(this);
+		worker2.registerObserver(this);
+
 		setSize(100,100);
 
 		setLocationRelativeTo(null);
@@ -107,15 +107,15 @@ public class GUI extends JFrame implements Observer {
 	@Override
 	public void update() {
 		
-		worker1 = kiosk1.getStatus();
-		worker2 = kiosk2.getStatus();
+		output1 = worker1.getStatus();
+		area1.setText(output1);
+		//JOptionPane.showMessageDialog(this, "worker 1: \n" + output1);
+		//System.out.println("W1: " + output1);
 		
-		area1.setText(worker1);
-		//JOptionPane.showMessageDialog(this, "worker 1: \n" + worker1);
-		//System.out.println("Would have said: " + worker1);
-		area2.setText(worker2);
-		//JOptionPane.showMessageDialog(this, "worker 2: \n" + worker2);
-		//System.out.println("Would have said: " + worker2);
+		output2 = worker2.getStatus();
+		area2.setText(output2);
+		//JOptionPane.showMessageDialog(this, "worker 2: \n" + output2);
+		//System.out.println("2: " + output2);
 		
 	}
 
