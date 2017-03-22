@@ -33,29 +33,22 @@ public class ListsManager  {
 		//Initialize empty list of Competitors
     	TaxiList = new ArrayList<Taxi>();
     	PassengerGroupList=new ArrayList<PassengerGroup>();
-        addRides(); 
-        
+        addPassengers();
+        addTaxis();
 	}
-	
-	
 	
 	 public ArrayList<Taxi> getTaxiList() {
 		return TaxiList;
 	}
 
-
-
 	public ArrayList<PassengerGroup> getPassengerGroupList() {
 		return PassengerGroupList;
 	}
 
-
-
-	private void addRides() 
+	public void addPassengers() 
 	    {
 	        //load staff data from file
 	        BufferedReader passBuff = null;
-	        BufferedReader taxiBuff = null;
 	        
 	        try 
 	        {
@@ -64,21 +57,10 @@ public class ListsManager  {
 		    	String inputPassengersLine = passBuff.readLine();  //read first line
 		    	while(inputPassengersLine != null)
 		    	{  
-		    		//stores details from this line in RideList class
+		    		//stores details from this line in Kiosk class
 		    		processLinePassengers(inputPassengersLine);
 		            //read next line
 		            inputPassengersLine = passBuff.readLine();
-		        }
-		    	
-		    	
-		    	taxiBuff = new BufferedReader(new FileReader("taxiDetailsInput.csv"));
-		    	String inputTaxiLine = taxiBuff.readLine();  //read first line
-		    	while(inputTaxiLine != null)
-		    	{  
-		    		//stores details from this line in RideList class
-		    		processLineTaxi(inputTaxiLine);
-		            //read next line
-		            inputTaxiLine = taxiBuff.readLine();
 		        }
 	        }
 	        catch(FileNotFoundException e) 
@@ -103,6 +85,46 @@ public class ListsManager  {
 	        	}
 	        }   	
 	    }
+	
+	public void addTaxis() 
+    {
+        //load staff data from file
+        BufferedReader taxiBuff = null;
+        
+        try 
+        {
+	    	taxiBuff = new BufferedReader(new FileReader("taxiDetailsInput.csv"));
+	    	String inputTaxiLine = taxiBuff.readLine();  //read first line
+	    	while(inputTaxiLine != null)
+	    	{  
+	    		//stores details from this line in Kiosk class
+	    		processLineTaxi(inputTaxiLine);
+	            //read next line
+	            inputTaxiLine = taxiBuff.readLine();
+	        }
+        }
+        catch(FileNotFoundException e) 
+        {
+        	System.out.println(e.getMessage());
+            System.exit(1);
+        }
+        catch (IOException e) 
+        {
+        	e.printStackTrace();
+            System.exit(1);        	
+        }
+        finally  
+        {
+        	try
+        	{
+        		taxiBuff.close();
+        	}
+        	catch (IOException ioe) 
+        	{
+        		//don't do anything
+        	}
+        }   	
+    }
 	 //
 	
 	public void processLinePassengers(String line) {

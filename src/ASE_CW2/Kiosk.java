@@ -8,29 +8,46 @@ public class Kiosk {
 	
 	private ArrayList<Taxi> TaxiList;
 	private ArrayList<PassengerGroup> PassengerGroupList;
-	private boolean finished = false;
+	private boolean finished;
 	
 	public Kiosk(ArrayList<Taxi> TaxiList, ArrayList<PassengerGroup> PassengerGroupList){
 		this.TaxiList=TaxiList;
 		this.PassengerGroupList=PassengerGroupList;
+		finished = false;
 	}
 	
 	public boolean isFinished() {
 		return finished;
 	}
 	
+	public void stopEarly() {
+		finished = true;
+	}
+	
+	public void readyToStart() {
+		finished = false;
+	}
+	
+	public ArrayList<Taxi> getTaxiList() {
+		return TaxiList;
+	}
+	
+	public ArrayList<PassengerGroup> getPassengerGroupList() {
+		return PassengerGroupList;
+	}
+	
+	public void setTaxiList(ArrayList<Taxi> list) {
+		TaxiList = list;
+	}
+	
+	public void setPassengerGroupList(ArrayList<PassengerGroup> list) {
+		PassengerGroupList = list;
+	}
+	
 	/*the method that returns the index of the taxi 
 	 * that has enough seats for the 
-	 * first passenger group in the queue*/
-	
-//	public int taxiIndexWithEnoughSeats()
-//	{
-//		for (int i=0;i<TaxiList.size();i++)
-//		{
-//			if (PassengerGroupList.get(0).getPassengersNumber()<=TaxiList.get(i).getMaxPassengersNumber()){return i;}
-//		}
-//		return -1;
-//	}
+	 * first passenger group in the queue
+	 * Tries to assign as small a taxi as possible */
 	
 	public int findAppropriateTaxi(int numPassengers) {
 		if (numPassengers <= 3) {
@@ -61,7 +78,7 @@ public class Kiosk {
 			int taxiNum = findAppropriateTaxi(PassengerGroupList.get(0).getPassengersNumber());
 			if (taxiNum!=-1)
 			{
-				output="\nDestination:  "+PassengerGroupList.get(0).getDestination()+"\nPassengers:  "+PassengerGroupList.get(0).getPassengersNumber()+
+				output="Destination:  "+PassengerGroupList.get(0).getDestination()+"\nPassengers:  "+PassengerGroupList.get(0).getPassengersNumber()+
 						"\nTaxi No: "+TaxiList.get(taxiNum).getPlateNumber();
 				TaxiList.remove(taxiNum);
 				PassengerGroupList.remove(0);

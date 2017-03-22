@@ -9,27 +9,81 @@ public class Worker extends Observable implements Runnable {
 	
 	private Kiosk kiosk;
 	private String output;
+	private int pause = 0;
 	
 	
 	public Worker(Kiosk k){
 		this.kiosk = k;
 	}
 	
+	public void setKiosk(Kiosk k) {
+		kiosk = k;
+	}
+	
 	public String getStatus() {
 		return output;
 	}
 	
-	public void run() {
-		while (!kiosk.isFinished()){
-			
-			try {double rand=Math.random()*600;
-			int randInt = (int)rand;
-			Thread.sleep(randInt); }
-			catch ( InterruptedException e) { }
-			output = kiosk.matchJourney();
-			notifyObservers();
+	public void pause() {
+		if (pause == 1) {
+			pause = 0;
+		}
+		else {
+			pause = 1;
 		}
 	}
+	
+	public void stopEarly() {
+		kiosk.stopEarly();
+	}
+	
+	public void ready() {
+		kiosk.readyToStart();
+	}
+	
+	public int getNumPassengerGroups() {
+		return kiosk.getPassengerGroupList().size();
+	}
+	
+	public int getNumTaxis() {
+		return kiosk.getTaxiList().size();
+	}
+	
+	public String getPassengerQueue() {
+		String queue = "QUEUE (" + getNumPassengerGroups() + ")\n";
+		ArrayList<PassengerGroup> list = kiosk.getPassengerGroupList();
+		
+		for (int i=0; i<list.size(); i++) {
+			//queue += list.get(i).getGroupName() + "\n" + list.get(i).getDestination() + "\n" + list.get(i).getPassengersNumber() + " people. \n \n";
+			queue += "\n" +list.get(i).getDestination() + "\n" + list.get(i).getPassengersNumber() + " people. \n";
+		}
+		return queue;
+	}
+	
+	public String getTaxiQueue() {
+		String queue = "TAXIS (" + getNumTaxis() + ")\n";
+		ArrayList<Taxi> list = kiosk.getTaxiList();
+		
+		for (int i=0; i<list.size(); i++) {
+			//queue += list.get(i).getGroupName() + "\n" + list.get(i).getDestination() + "\n" + list.get(i).getPassengersNumber() + " people. \n \n";
+			queue += "\n" + list.get(i).getPlateNumber();
+		}
+		return queue;
+	}
+	
+	public void run() {
+		while (!kiosk.isFinished()){
+			try {double rand=Math.random()*1000;
+			int randInt = (int)rand+500;
+			Thread.sleep(randInt); }
+			catch ( InterruptedException e) { }
+			if (pause == 0) {
+				output = kiosk.matchJourney();
+				notifyObservers();
+			}
+		}
+	}
+	
 	
 	////////////////////////////////////////////////////////
 	//OBSERVER PATTERN
