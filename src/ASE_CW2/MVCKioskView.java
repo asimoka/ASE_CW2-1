@@ -44,6 +44,7 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 		worker4.registerObserver(this);
 		//GUI details
 		setSize(480,700);
+		setMinimumSize(new Dimension(480, 650));
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Tax Kiosk");
@@ -333,15 +334,27 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 	public void update() {
 		
 		output1 = worker1.getStatus();
+		if (output1 != area1.getText()) {
+			//////
+		}
 		area1.setText(output1);
 		
 		output2 = worker2.getStatus();
+		if (output2 != area2.getText()) {
+			//////
+		}
 		area2.setText(output2);
 
 		output3 = worker3.getStatus();
+		if (output3 != area3.getText()) {
+			//////
+		}
 		area3.setText(output3);
 		
 		output4 = worker4.getStatus();
+		if (output4 != area4.getText()) {
+			//////
+		}
 		area4.setText(output4);
 		
 		areaPassengers.setText(worker1.getPassengerQueue());

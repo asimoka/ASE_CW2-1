@@ -10,7 +10,8 @@ public class Worker extends Observable implements Runnable {
 	private Kiosk kiosk;
 	private String output;
 	private int pause = 0;
-	private enum speed {SLOW, MEDIUM, FAST};
+	private enum speedEnum {SLOW, MEDIUM, FAST};
+	speedEnum speed = speedEnum.SLOW;
 	
 	
 	public Worker(Kiosk k){
@@ -78,10 +79,23 @@ public class Worker extends Observable implements Runnable {
 	
 	public void run() {
 		while (!kiosk.isFinished()){
-			try {double rand=Math.random()*1000;
-			int randInt = (int)rand+500;
-			Thread.sleep(randInt); }
-			catch ( InterruptedException e) { }
+			switch (speed) {
+				case SLOW:
+					try {double rand=Math.random()*1000;
+					int randInt = (int)rand+1500;
+					Thread.sleep(randInt); }
+					catch ( InterruptedException e) { }
+				case MEDIUM:
+					try {double rand=Math.random()*1000;
+					int randInt = (int)rand+1000;
+					Thread.sleep(randInt); }
+					catch ( InterruptedException e) { }
+				case FAST:
+					try {double rand=Math.random()*1000;
+					int randInt = (int)rand+500;
+					Thread.sleep(randInt); }
+					catch ( InterruptedException e) { }
+			}
 			if (pause == 0) {
 				output = kiosk.matchJourney();
 				notifyObservers();
