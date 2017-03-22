@@ -1,0 +1,269 @@
+Passenger Group: Yerkinova added to Passenger Queue list ~~ Size: 2 Destination: 1Edinburgh Castle
+Passenger Group: Duncan added to Passenger Queue list ~~ Size: 3 Destination: 1North Bridge
+Passenger Group: Bittner added to Passenger Queue list ~~ Size: 2 Destination: 1Dynamic Earth
+Passenger Group: McAvoy added to Passenger Queue list ~~ Size: 5 Destination: 1Arthurs Seat
+Passenger Group: Donner added to Passenger Queue list ~~ Size: 2 Destination: 2Dynamic Earth
+Passenger Group: Jackson added to Passenger Queue list ~~ Size: 2 Destination: 2Edinburgh Castle
+Passenger Group: Harrison added to Passenger Queue list ~~ Size: 4 Destination: 3Dynamic Earth
+Passenger Group: Ford added to Passenger Queue list ~~ Size: 2 Destination: 3Edinburgh Castle
+Passenger Group: Hannibal added to Passenger Queue list ~~ Size: 1 Destination: 2North Bridge
+Taxi: AB12CDE added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: CD13FDS added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: AC16DXC added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: BR08LKD added to Taxi Queue list ~~ Max Passengers: 7
+Taxi: MK15JKL added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RG13PLS added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RT09QWE added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: PA35FDR added to Taxi Queue list ~~ Max Passengers: 7
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AB12CDE ~~ Matched with Group: Yerkinova ~~ Destination: 1Edinburgh Castle by Worker 2 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AC16DXC ~~ Matched with Group: Duncan ~~ Destination: 1North Bridge by Worker 3 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: MK15JKL ~~ Matched with Group: Bittner ~~ Destination: 1Dynamic Earth by Worker 4 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: CD13FDS ~~ Matched with Group: McAvoy ~~ Destination: 1Arthurs Seat by Worker 1 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: RG13PLS ~~ Matched with Group: Donner ~~ Destination: 2Dynamic Earth by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: RT09QWE ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: BR08LKD ~~ Matched with Group: Harrison ~~ Destination: 3Dynamic Earth by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 3 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 4 
+Passenger Group: Yerkinova added to Passenger Queue list ~~ Size: 2 Destination: 1Edinburgh Castle
+Passenger Group: Duncan added to Passenger Queue list ~~ Size: 3 Destination: 1North Bridge
+Passenger Group: Bittner added to Passenger Queue list ~~ Size: 2 Destination: 1Dynamic Earth
+Passenger Group: McAvoy added to Passenger Queue list ~~ Size: 5 Destination: 1Arthurs Seat
+Passenger Group: Donner added to Passenger Queue list ~~ Size: 2 Destination: 2Dynamic Earth
+Passenger Group: Jackson added to Passenger Queue list ~~ Size: 2 Destination: 2Edinburgh Castle
+Passenger Group: Harrison added to Passenger Queue list ~~ Size: 4 Destination: 3Dynamic Earth
+Passenger Group: Ford added to Passenger Queue list ~~ Size: 2 Destination: 3Edinburgh Castle
+Passenger Group: Hannibal added to Passenger Queue list ~~ Size: 1 Destination: 2North Bridge
+Taxi: AB12CDE added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: CD13FDS added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: AC16DXC added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: BR08LKD added to Taxi Queue list ~~ Max Passengers: 7
+Taxi: MK15JKL added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RG13PLS added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RT09QWE added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: PA35FDR added to Taxi Queue list ~~ Max Passengers: 7
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AB12CDE ~~ Matched with Group: Yerkinova ~~ Destination: 1Edinburgh Castle by Worker 4 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AC16DXC ~~ Matched with Group: Duncan ~~ Destination: 1North Bridge by Worker 1 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: MK15JKL ~~ Matched with Group: Bittner ~~ Destination: 1Dynamic Earth by Worker 2 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: CD13FDS ~~ Matched with Group: McAvoy ~~ Destination: 1Arthurs Seat by Worker 3 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: RG13PLS ~~ Matched with Group: Donner ~~ Destination: 2Dynamic Earth by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: RT09QWE ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: BR08LKD ~~ Matched with Group: Harrison ~~ Destination: 3Dynamic Earth by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 3 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 4 
+Passenger Group: Yerkinova added to Passenger Queue list ~~ Size: 2 Destination: 1Edinburgh Castle
+Passenger Group: Duncan added to Passenger Queue list ~~ Size: 3 Destination: 1North Bridge
+Passenger Group: Bittner added to Passenger Queue list ~~ Size: 2 Destination: 1Dynamic Earth
+Passenger Group: McAvoy added to Passenger Queue list ~~ Size: 5 Destination: 1Arthurs Seat
+Passenger Group: Donner added to Passenger Queue list ~~ Size: 2 Destination: 2Dynamic Earth
+Passenger Group: Jackson added to Passenger Queue list ~~ Size: 2 Destination: 2Edinburgh Castle
+Passenger Group: Harrison added to Passenger Queue list ~~ Size: 4 Destination: 3Dynamic Earth
+Passenger Group: Ford added to Passenger Queue list ~~ Size: 2 Destination: 3Edinburgh Castle
+Passenger Group: Hannibal added to Passenger Queue list ~~ Size: 1 Destination: 2North Bridge
+Taxi: AB12CDE added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: CD13FDS added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: AC16DXC added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: BR08LKD added to Taxi Queue list ~~ Max Passengers: 7
+Taxi: MK15JKL added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RG13PLS added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RT09QWE added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: PA35FDR added to Taxi Queue list ~~ Max Passengers: 7
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AB12CDE ~~ Matched with Group: Hannibal ~~ Destination: 2North Bridge by Worker 4 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AC16DXC ~~ Matched with Group: Yerkinova ~~ Destination: 1Edinburgh Castle by Worker 1 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: MK15JKL ~~ Matched with Group: Duncan ~~ Destination: 1North Bridge by Worker 3 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: RG13PLS ~~ Matched with Group: Bittner ~~ Destination: 1Dynamic Earth by Worker 4 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: CD13FDS ~~ Matched with Group: McAvoy ~~ Destination: 1Arthurs Seat by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: RT09QWE ~~ Matched with Group: Donner ~~ Destination: 2Dynamic Earth by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: BR08LKD ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 3 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Harrison ~~ Destination: 3Dynamic Earth by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Harrison ~~ Destination: 3Dynamic Earth by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Harrison ~~ Destination: 3Dynamic Earth by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Harrison ~~ Destination: 3Dynamic Earth by Worker 3 
+Passenger Group: Yerkinova added to Passenger Queue list ~~ Size: 2 Destination: 1Edinburgh Castle
+Passenger Group: Duncan added to Passenger Queue list ~~ Size: 3 Destination: 1North Bridge
+Passenger Group: Bittner added to Passenger Queue list ~~ Size: 2 Destination: 1Dynamic Earth
+Passenger Group: McAvoy added to Passenger Queue list ~~ Size: 5 Destination: 1Arthurs Seat
+Passenger Group: Donner added to Passenger Queue list ~~ Size: 2 Destination: 2Dynamic Earth
+Passenger Group: Jackson added to Passenger Queue list ~~ Size: 2 Destination: 2Edinburgh Castle
+Passenger Group: Harrison added to Passenger Queue list ~~ Size: 4 Destination: 3Dynamic Earth
+Passenger Group: Ford added to Passenger Queue list ~~ Size: 2 Destination: 3Edinburgh Castle
+Passenger Group: Hannibal added to Passenger Queue list ~~ Size: 1 Destination: 2North Bridge
+Taxi: AB12CDE added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: CD13FDS added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: AC16DXC added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: BR08LKD added to Taxi Queue list ~~ Max Passengers: 7
+Taxi: MK15JKL added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RG13PLS added to Taxi Queue list ~~ Max Passengers: 3
+Taxi: RT09QWE added to Taxi Queue list ~~ Max Passengers: 5
+Taxi: PA35FDR added to Taxi Queue list ~~ Max Passengers: 7
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AB12CDE ~~ Matched with Group: Hannibal ~~ Destination: 2North Bridge by Worker 1 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: AC16DXC ~~ Matched with Group: Ford ~~ Destination: 3Edinburgh Castle by Worker 3 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: MK15JKL ~~ Matched with Group: Yerkinova ~~ Destination: 1Edinburgh Castle by Worker 2 
+Searching for Taxis with 3 seats 
+MATCH~~ Taxi: RG13PLS ~~ Matched with Group: Duncan ~~ Destination: 1North Bridge by Worker 3 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: CD13FDS ~~ Matched with Group: Bittner ~~ Destination: 1Dynamic Earth by Worker 4 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: RT09QWE ~~ Matched with Group: McAvoy ~~ Destination: 1Arthurs Seat by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: BR08LKD ~~ Matched with Group: Donner ~~ Destination: 2Dynamic Earth by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 2 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 3 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 4 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 3 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 2 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 3 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 3 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 2 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 4 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 3 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 2 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 1 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 4 
+Searching for Taxis with 3 seats 
+Searching for Taxis with 5 seats 
+Searching for Taxis with 7 seats 
+MATCH~~ Taxi: PA35FDR ~~ Matched with Group: Jackson ~~ Destination: 2Edinburgh Castle by Worker 3 
