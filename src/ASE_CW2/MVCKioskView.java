@@ -1,5 +1,11 @@
 package ASE_CW2;
-
+/*
+ * View Class:
+ * GUI containing 4 worker windows with apuse buttons, 2 windows containing 
+ * customer queue and taxi queue and buttons to start simulation, emergency
+ * stop, add more passengers and add more taxis.
+ * 
+ */
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
