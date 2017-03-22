@@ -132,7 +132,7 @@ public class Worker extends Observable implements Runnable {
 			}
 			//if worker is not paused, make a match and notify the observer (GUI)
 			if (pause == 0) {
-				output = speed + ": " + kiosk.matchJourney();
+				output = kiosk.matchJourney();
 				notifyObservers();
 			}
 		}
