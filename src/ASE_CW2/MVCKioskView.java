@@ -4,7 +4,6 @@ package ASE_CW2;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
@@ -20,10 +19,10 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 	private JTextArea area1, area2, area3, area4, areaPassengers, areaTaxis;
 	private JRadioButton fast, medium, slow;
 	//colours
-	Color bgC = new Color(218,251,255);
-	Color stopC = new Color(255,87,98);
-	Color goC = new Color(0,203,235);
-	Color btnC = new Color(164,244,255);
+	private Color bgC = new Color(218,251,255);
+	private Color stopC = new Color(255,87,98);
+	private Color goC = new Color(0,203,235);
+	private Color btnC = new Color(164,244,255);
 	
 	private JButton go, pause1, pause2, pause3, pause4, stop, resetPass, resetTaxi;
 	
@@ -44,7 +43,7 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 		worker4.registerObserver(this);
 		//GUI details
 		setSize(480,700);
-		setMinimumSize(new Dimension(480, 650));
+		setMinimumSize(new Dimension(460, 650));
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Tax Kiosk");
@@ -92,10 +91,13 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
         
 		fast = new JRadioButton("fast");
 		fast.setBackground(bgC);
+		fast.addActionListener(this);
 		medium = new JRadioButton("med");
 		medium.setBackground(bgC);
+		medium.addActionListener(this);
 		slow = new JRadioButton("slow");
 		slow.setBackground(bgC);
+		slow.addActionListener(this);
 		
 		ButtonGroup group = new ButtonGroup();
 		group.add(fast);
@@ -327,35 +329,76 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 		else if (e.getSource() == resetTaxi) {
 			resetTaxi();
 		}
+		else if (e.getSource() == fast) {
+			worker1.setSpeed(3);
+			worker2.setSpeed(3);
+			worker3.setSpeed(3);
+			worker4.setSpeed(3);
+		}
+		else if (e.getSource() == medium) {
+			worker1.setSpeed(2);
+			worker2.setSpeed(2);
+			worker3.setSpeed(2);
+			worker4.setSpeed(2);
+					
+		}
+		else if (e.getSource() == slow) {
+			worker1.setSpeed(1);
+			worker2.setSpeed(1);
+			worker3.setSpeed(1);
+			worker4.setSpeed(1);
+			
+		}
 		
 	}
 	
 	@Override
 	public void update() {
 		
-		output1 = worker1.getStatus();
-		if (output1 != area1.getText()) {
-			//////
-		}
-		area1.setText(output1);
 		
-		output2 = worker2.getStatus();
-		if (output2 != area2.getText()) {
-			//////
+		if (output1 != worker1.getStatus()) {
+			output1 = worker1.getStatus();
+			area1.setText(output1);
 		}
-		area2.setText(output2);
-
-		output3 = worker3.getStatus();
-		if (output3 != area3.getText()) {
-			//////
+		if (output2 != worker2.getStatus()) {
+			output2 = worker2.getStatus();
+			area2.setText(output2);
 		}
-		area3.setText(output3);
+		if (output3 != worker3.getStatus()) {
+			output3 = worker3.getStatus();
+			area3.setText(output3);
+		}
+		if (output4 != worker4.getStatus()) {
+			output4 = worker4.getStatus();
+			area4.setText(output4);
+		}
 		
-		output4 = worker4.getStatus();
-		if (output4 != area4.getText()) {
-			//////
-		}
-		area4.setText(output4);
+		
+		
+		
+//		output1 = worker1.getStatus();
+//		if (output1 != area1.getText()) {
+//			//////
+//		}
+//		area1.setText(output1);
+//		
+//		output2 = worker2.getStatus();
+//		if (output2 != area2.getText()) {
+//			//////
+//		}
+//		area2.setText(output2);
+//
+//		output3 = worker3.getStatus();
+//		if (output3 != area3.getText()) {
+//			//////
+//		}
+//		area3.setText(output3);
+//		
+//		output4 = worker4.getStatus();
+//		if (output4 != area4.getText()) {
+//			//////
+//		}
+//		area4.setText(output4);
 		
 		areaPassengers.setText(worker1.getPassengerQueue());
 		areaTaxis.setText(worker1.getTaxiQueue());
