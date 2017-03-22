@@ -10,6 +10,7 @@ public class Worker extends Observable implements Runnable {
 	private Kiosk kiosk;
 	private String output;
 	private int pause = 0;
+	private enum speed {SLOW, MEDIUM, FAST};
 	
 	
 	public Worker(Kiosk k){
@@ -18,6 +19,10 @@ public class Worker extends Observable implements Runnable {
 	
 	public void setKiosk(Kiosk k) {
 		kiosk = k;
+	}
+	
+	public Kiosk getKiosk() {
+		return kiosk;
 	}
 	
 	public String getStatus() {

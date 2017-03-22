@@ -43,7 +43,7 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 		worker3.registerObserver(this);
 		worker4.registerObserver(this);
 		//GUI details
-		setSize(520,650);
+		setSize(480,700);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Tax Kiosk");
@@ -59,6 +59,7 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 	
 	//North panel contains buttons to start the simulation, stop it and reset
 	public void setupPanelNorth() {
+		JPanel outerPanel = new JPanel(new GridLayout(0,1));
 		JPanel nPanel = new JPanel(new FlowLayout());
 		nPanel.setBackground(bgC);
 		
@@ -72,17 +73,42 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
         stop.addActionListener(this);
         nPanel.add(stop);
         
+        JPanel addPanel = new JPanel(new FlowLayout());
+		addPanel.setBackground(bgC);
+        
         resetPass = new JButton("ADD PASSENGERS");
         resetPass.addActionListener(this);
         resetPass.setBackground(btnC);
-        nPanel.add(resetPass);
+        addPanel.add(resetPass);
 
         resetTaxi = new JButton("ADD TAXIS");
         resetTaxi.addActionListener(this);
         resetTaxi.setBackground(btnC);
-        nPanel.add(resetTaxi);
+        addPanel.add(resetTaxi);
         
-        this.add(nPanel, BorderLayout.NORTH);
+        JPanel radioPanel = new JPanel(new FlowLayout());
+		radioPanel.setBackground(bgC);
+        
+		fast = new JRadioButton("fast");
+		fast.setBackground(bgC);
+		medium = new JRadioButton("med");
+		medium.setBackground(bgC);
+		slow = new JRadioButton("slow");
+		slow.setBackground(bgC);
+		
+		ButtonGroup group = new ButtonGroup();
+		group.add(fast);
+		group.add(medium);
+		group.add(slow);
+		
+		radioPanel.add(fast);
+		radioPanel.add(medium);
+		radioPanel.add(slow);
+		
+		outerPanel.add(nPanel);
+		outerPanel.add(addPanel);
+		outerPanel.add(radioPanel);
+        this.add(outerPanel, BorderLayout.NORTH);
 	}
 
 	public void setupPanelWest(){
@@ -90,6 +116,7 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 		nPanel.setBorder(new EmptyBorder(15,15,15,15));
 		nPanel.setBackground(bgC);
 		nPanel.setSize(250,50);
+		
 		
 		JLabel label1 = new JLabel("Window 1");
 		nPanel.add(label1);
@@ -197,7 +224,6 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
         scroll2.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         nPanel.add(scroll2);
-        
 
 		this.add(nPanel, BorderLayout.SOUTH);
 		
@@ -269,6 +295,25 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 				pause2.setText("PAUSE");
 			}
 		}
+		else if (e.getSource() == pause3) {
+			worker3.pause();
+			if (pause3.getText() == "PAUSE") {
+				pause3.setText("UNPAUSE");
+			}
+			else {
+				pause3.setText("PAUSE");
+			}
+			
+		}
+		else if (e.getSource() == pause4) {
+			worker2.pause();
+			if (pause4.getText() == "PAUSE") {
+				pause4.setText("UNPAUSE");
+			}
+			else {
+				pause4.setText("PAUSE");
+			}
+		}
 		else if (e.getSource() == stop) {
 			worker1.stopEarly();
 			worker2.stopEarly();
@@ -301,7 +346,15 @@ public class MVCKioskView extends JFrame implements Observer, ActionListener{
 		
 		areaPassengers.setText(worker1.getPassengerQueue());
 		areaTaxis.setText(worker1.getTaxiQueue());
-
+		
+		if (worker1.getKiosk().isFinished()) {
+			stop.setEnabled(false);
+			go.setEnabled(true);
+		}
+		else {
+			go.setEnabled(false);
+			stop.setEnabled(true);
+		}
 		
 	}
 	
